@@ -7,6 +7,99 @@
 //Teste larissa
 
 int main() {
+
+    int populacao, pontos;
+    char estado[50];
+    char codigo[50];
+    char cidade[50];
+    float area; 
+    float pib;
+
+        printf("CARTA 1\n");
+
+        printf("Escreva o estado: \n");
+        scanf("%s", estado);
+
+        printf("Digite o codigo da carta:\n");
+        scanf("%s", codigo);
+
+        printf("Digite o nome da cidade: \n");
+        scanf("%s", cidade);
+
+        printf("Insira a população: \n");
+        scanf(" %d", &populacao);
+
+        printf("Insira a Área do estado: \n");
+        scanf(" %f", &area);
+        
+        printf("Insira o PIB: \n");
+        scanf(" %f", &pib);
+
+        printf("Quantidade de pontos turisticos: \n");
+        scanf(" %d", &pontos);
+        printf("\n");
+       
+       
+        printf("CARTA 01\n");
+        printf("Estado: %s\n", estado);
+        printf("Codigo: %s\n", codigo);
+        printf("Nome da Cidade: %s\n", cidade);
+        printf("População: %d\n", populacao);
+        printf("Área: %f\n", area);
+        printf("PIB: %f\n", pib);
+        printf("Numeros de Pontos Turisticos: %d\n", pontos);
+        printf("\n");
+
+
+
+
+
+        printf("CARTA 2\n");
+
+        printf("Escreva o estado: \n");
+        scanf("%s", estado);
+
+        printf("Digite o codigo da carta:\n");
+        scanf("%s", codigo);
+
+        printf("Digite o nome da cidade: \n");
+        scanf("%s", cidade);
+
+        printf("Insira a população: \n");
+        scanf(" %d", &populacao);
+
+        printf("Insira a Área do estado: \n");
+        scanf(" %f", &area);
+        
+        printf("Insira o PIB: \n");
+        scanf(" %f", &pib);
+
+        printf("Quantidade de pontos turisticos: \n");
+        scanf(" %d", &pontos);
+        printf("\n");
+       
+       
+        printf("CARTA 02\n");
+        printf("Estado: %s\n", estado);
+        printf("Codigo: %s\n", codigo);
+        printf("Nome da Cidade: %s\n", cidade);
+        printf("População: %d\n", populacao);
+        printf("Área: %f\n", area);
+        printf("PIB: %f\n", pib);
+        printf("Numeros de Pontos Turisticos: %d\n", pontos);
+
+        return 0;
+
+
+
+
+
+
+   
+   
+   
+   
+   
     // Sugestão: Defina variáveis separadas para cada atributo da cidade.
     // Exemplos de atributos: código da cidade, nome, população, área, PIB, número de pontos turísticos.
     
