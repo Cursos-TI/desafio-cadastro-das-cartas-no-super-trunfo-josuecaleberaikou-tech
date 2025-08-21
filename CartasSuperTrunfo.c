@@ -8,14 +8,15 @@
 
 int main() {
 
-    int populacao, pontos;
+    int populacao, pontos;//inseri as variaveis 
     char estado[50];
     char codigo[50];
     char cidade[50];
     float area; 
     float pib;
+    float PIB_per_capita, densidade_populacinal;
 
-        printf("CARTA 1\n");
+        printf("CARTA 1\n");// solicitei o pedido das informações e usei o scanf para que o usuario inseri-se as informações
 
         printf("Escreva o estado: \n");
         scanf("%s", estado);
@@ -40,7 +41,7 @@ int main() {
         printf("\n");
        
        
-        printf("CARTA 01\n");
+        printf("CARTA 01\n"); // E aqui foi imprimido todas as informações das pelo usuario
         printf("Estado: %s\n", estado);
         printf("Codigo: %s\n", codigo);
         printf("Nome da Cidade: %s\n", cidade);
@@ -48,10 +49,12 @@ int main() {
         printf("Área: %f\n", area);
         printf("PIB: %f\n", pib);
         printf("Numeros de Pontos Turisticos: %d\n", pontos);
-        printf("\n");
+       
+       densidade_populacinal = (populacao / area); //foi inserido os operadores matematicos.
+        PIB_per_capita = (pib / populacao);
 
-
-
+        printf("Densidade Populacional:%.2f\n", densidade_populacinal);//solicitamos a impressão dos resultados com duas casas decimais.
+        printf("Pib per Capita:%.2f\n\n", PIB_per_capita);
 
 
         printf("CARTA 2\n");
@@ -87,6 +90,10 @@ int main() {
         printf("Área: %f\n", area);
         printf("PIB: %f\n", pib);
         printf("Numeros de Pontos Turisticos: %d\n", pontos);
+        printf("Densidade Populacional:%.2f\n", densidade_populacinal);
+        printf("Pib per Capita:%.2f\n", PIB_per_capita);
+        
+
 
         return 0;
 
