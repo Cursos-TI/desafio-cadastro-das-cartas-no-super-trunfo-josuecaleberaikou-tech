@@ -8,13 +8,15 @@
 
 int main() {
 
-    int populacao, pontos;//inseri as variaveis 
+    unsigned long int populacao1, populacao2;
+    int pontos1,pontos2;//inseri as variaveis 
     char estado[50];
     char codigo[50];
     char cidade[50];
-    float area; 
-    float pib;
-    float PIB_per_capita, densidade_populacinal;
+    float area1, area2; 
+    float pib1, pib2;
+    float PIB_per_capita1, PIB_per_capita2, densidade_populacional1, densidade_populacional2;
+    float Super_Poder1, Super_Poder2;
 
         printf("CARTA 1\n");// solicitei o pedido das informações e usei o scanf para que o usuario inseri-se as informações
 
@@ -28,16 +30,16 @@ int main() {
         scanf("%s", cidade);
 
         printf("Insira a população: \n");
-        scanf(" %d", &populacao);
+        scanf(" %u", &populacao1);
 
         printf("Insira a Área do estado: \n");
-        scanf(" %f", &area);
+        scanf(" %f", &area1);
         
         printf("Insira o PIB: \n");
-        scanf(" %f", &pib);
+        scanf(" %f", &pib1);
 
         printf("Quantidade de pontos turisticos: \n");
-        scanf(" %d", &pontos);
+        scanf(" %d", &pontos1);
         printf("\n");
        
        
@@ -45,16 +47,20 @@ int main() {
         printf("Estado: %s\n", estado);
         printf("Codigo: %s\n", codigo);
         printf("Nome da Cidade: %s\n", cidade);
-        printf("População: %d\n", populacao);
-        printf("Área: %f\n", area);
-        printf("PIB: %f\n", pib);
-        printf("Numeros de Pontos Turisticos: %d\n", pontos);
+        printf("População: %u\n", populacao1);
+        printf("Área: %.2f\n", area1);
+        printf("PIB: %.2f\n", pib1);
+        printf("Numeros de Pontos Turisticos: %d\n", pontos1);
        
-       densidade_populacinal = (populacao / area); //foi inserido os operadores matematicos.
-        PIB_per_capita = (pib / populacao);
+       densidade_populacional1 = (area1/ populacao1); //foi inserido os operadores matematicos.
+        PIB_per_capita1 = (pib1 / populacao1);
 
-        printf("Densidade Populacional:%.2f\n", densidade_populacinal);//solicitamos a impressão dos resultados com duas casas decimais.
-        printf("Pib per Capita:%.2f\n\n", PIB_per_capita);
+        printf("Densidade Populacional:%.2f\n", densidade_populacional1);//solicitamos a impressão dos resultados com duas casas decimais.
+        printf("Pib per Capita:%.2f\n", PIB_per_capita1);
+
+          float densidadecalculada1= (1/ densidade_populacional1);
+          float superpodercarta1 = (populacao1 + area1 + pib1 + pontos1 + PIB_per_capita1 + densidade_populacional1);
+          printf("Super poder: %.2f\n\n", superpodercarta1);
 
 
         printf("CARTA 2\n");
@@ -69,16 +75,16 @@ int main() {
         scanf("%s", cidade);
 
         printf("Insira a população: \n");
-        scanf(" %d", &populacao);
+        scanf(" %u", &populacao2);
 
         printf("Insira a Área do estado: \n");
-        scanf(" %f", &area);
+        scanf(" %f", &area2);
         
         printf("Insira o PIB: \n");
-        scanf(" %f", &pib);
+        scanf(" %f", &pib2);
 
         printf("Quantidade de pontos turisticos: \n");
-        scanf(" %d", &pontos);
+        scanf(" %d", &pontos2);
         printf("\n");
        
        
@@ -86,12 +92,24 @@ int main() {
         printf("Estado: %s\n", estado);
         printf("Codigo: %s\n", codigo);
         printf("Nome da Cidade: %s\n", cidade);
-        printf("População: %d\n", populacao);
-        printf("Área: %f\n", area);
-        printf("PIB: %f\n", pib);
-        printf("Numeros de Pontos Turisticos: %d\n", pontos);
-        printf("Densidade Populacional:%.2f\n", densidade_populacinal);
-        printf("Pib per Capita:%.2f\n", PIB_per_capita);
+        printf("População: %u\n", populacao2);
+        printf("Área: %.2f\n", area2);
+        printf("PIB: %.2f\n", pib2);
+        printf("Numeros de Pontos Turisticos: %d\n", pontos2);
+       
+        densidade_populacional2 = (area2/ populacao2); //foi inserido os operadores matematicos.
+        PIB_per_capita2 = (pib2 / populacao2);
+       
+        printf("Densidade Populacional:%.2f\n", densidade_populacional2);
+        printf("Pib per Capita:%.2f\n", PIB_per_capita2);
+
+        // Calcular todas as variaveis 
+
+        float densidadecalculada2= (1/ densidade_populacional2);
+        float superpodercarta2 = (populacao2 + area2 + pib2 + pontos2 + PIB_per_capita2 + 1/densidade_populacional2);
+
+        printf("Super poder: %.2f\n\n", superpodercarta2);
+        
         
 
 
